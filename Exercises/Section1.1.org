@@ -1,0 +1,15 @@
+#+TITLE: Section 1.1
+* Ex. 1.1.1: What is the difference between a compiler and an interpreter?
+ A Compiler takes source code as input and generate target machine/assembly code as output while an interpreter takes source code as input alongside the user input for the source program and execute operations specified by the source program.
+* Ex. 1.1.2 What are the advantages of (a)  a compiler over an interpreter (b) an interpreter over a compiler?
+a. Produced target program from the compiler is usually faster than an interpreter during execution.
+b. Interpreter usually gives better diagnostics and provide a more flexible approach for software development
+
+* Ex. 1.1.3 What advatages are there to a language-processing system in which the compiler produces assembly language rather than machine langauge?
+Assembly langauges are easier to produce and easier to debug.
+* Ex. 1.1.4 A Compiler that translates a high-level language into another high-level language is called a source-to-source translator. What advantages are there to using C as a target language for a compiler?
+  - Cross-platform support as available C Compilers (LLVM,GCC..,etc.) generate machine code for numerous targets and platforms.
+  - Access to C/C++ eco-system
+  - Performance gains (depends on the source langauge architechture)
+* Ex. 1.1.5 Describe some of the tasks that an assembler needs to perform
+Assembler translate assembly language into target machine code ready for execution.
