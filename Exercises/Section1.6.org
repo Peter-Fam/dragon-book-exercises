@@ -1,0 +1,93 @@
+#+TITLE: Section 1.6 Exercises
+*** Ex. 1.6.1 For the block-structured C Code below, indicate the values assigned to w, x,y,z.
+#+begin_src C
+#include <stdio.h>
+
+int main(void) {
+  int w, x, y, z;
+  int i = 4;
+  int j = 5;
+  {
+    int j = 7;
+    i = 6;
+    w = i + j; // w = 13
+  }
+  x = i + j; // x = 11
+  {
+    int i = 8;
+    y = i + j; // y = 13
+  }
+  z = i + j; // z = 11
+  printf("x=%d,y=%d,z=%d,w=%d\n", x, y, z, w);
+  return 0;
+}
+#+end_src
+
+#+RESULTS:
+| x=11 | y=13 | z=11 | w=13 |
+*** Ex. 1.6.2 Repeat Exercise 1.6.1 for the code below.
+#+begin_src C
+#include <stdio.h>
+
+int main(void) {
+  int w, x, y, z;
+  int i = 3;
+  int j = 4;
+  {
+    int i = 5;
+    w = i + j; // w = 9
+  }
+  x = i + j; // x = 7
+  {
+
+    int j = 6;
+    i = 7;
+    y = i + j; // y = 13
+  }
+  z = i + j; // z = 11
+  printf("x=%d,y=%d,z=%d,w=%d\n", x, y, z, w);
+  return 0;
+}
+#+end_src
+
+#+RESULTS:
+| x=7 | y=13 | z=11 | w=9 |
+
+*** Ex. 1.6.3 For the block-structured code below, assuming the usual static scoping of declarations, give the scope of each of the twelve declarations.
+#+begin_src C
+#include <stdio.h>
+
+int main(void) {
+  {
+    int w, x, y, z; /* Block B1 */
+    {
+      int x, z; /* Block B2 */
+      { int w, x; /* Block B3 */ }
+    }
+    {
+      int w, x; /* Block B4 */
+      { int y, z; /* Block B5 */ }
+    }
+  }
+  return 0;
+}
+#+end_src
+
+*** Ex. 1.6.4 What is printed by the following C code?
+#+begin_src C
+#define a (x + 1)
+int x = 2;
+void b() {
+  x = a;
+  printf("%d\n", x);
+}
+void c() {
+  int x = 1;
+  printf("%d\n", a);
+}
+int main(void) {
+  b();
+  c();
+  return 0;
+}
+#+end_src
