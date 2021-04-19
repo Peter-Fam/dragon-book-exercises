@@ -1,5 +1,5 @@
 #+TITLE: Section 1.1 Exercises
-*** Ex. 1.1.1: What is the difference between a compiler and an interpreter?
+*** Ex. 1.1.1 What is the difference between a compiler and an interpreter?
  A Compiler takes source code as input and generate target machine/assembly code as output while an interpreter takes source code as input alongside the user input for the source program and execute operations specified by the source program.
 *** Ex. 1.1.2 What are the advantages of (a)  a compiler over an interpreter (b) an interpreter over a compiler?
 a. Produced target program from the compiler is usually faster than an interpreter during execution.
