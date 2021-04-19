@@ -1,0 +1,13 @@
+#+TITLE: Section 1.3 Exercises
+*** Ex. 1.3.1 Indicate which of the following terms (imperative, declarative, von Neumman, Object-oriented, functional, third-generation, fourth-generation, scripting) apply to which of the following languages (C,C++, Cobol, Fortran, Java, Lisp, ML, Perl, Python, VB)
+|-----------------+-----+-----+-------+---------+------+------+-----+------+--------+-----|
+|       <c>       | <c> | <c> |  <c>  |   <c>   | <c>  | <c>  | <c> | <c>  |  <c>   | <c> |
+|                 |  C  | C++ | Cobol | Fortran | Java | Lisp | ML  | Perl | Python | VB  |
+|   imperative    |  X  |  X  |   X   |    X    |  X   |  X   |     |  X   |   X    |  X  |
+|   declarative   |     |     |       |         |      |      |  X  |      |        |     |
+|   von Neumman   |  X  |  X  |   X   |    X    |      |      |     |      |        |     |
+| Object-Oriented |     |  X  |       |         |  X   |  X   |     |      |   X    |  X  |
+|   functional    |     |     |       |         |      |  X   |  X  |      |   X    |     |
+| 3rd-generation  |  X  |  X  |   X   |    X    |  X   |  X   |     |  X   |   X    |  X  |
+| 4th-generation  |     |     |       |         |      |      |  X  |      |        |     |
+|    scripting    |     |     |       |         |      |  X   |     |  X   |   X    |     |
